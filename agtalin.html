@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Agtalin Shrine in Pilar, Capiz, a historical and cultural site in the Philippines"/>
+  <title>Agtalin Shrine - Pilar, Capiz</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f7;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    header {
+      background-color: #007acc;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #333;
+    }
+    nav a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+    }
+    nav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+    section {
+      padding: 20px;
+      margin: 20px 0;
+    }
+    section h2 {
+      font-size: 2em;
+      color: #007acc;
+    }
+    section p {
+      font-size: 1.2em;
+      line-height: 1.6em;
+    }
+    .content {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .content div {
+      flex: 1;
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .content img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 20px;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    footer {
+      background-color: #007acc;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+    form input, form button {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Agtalin Shrine - Pilar, Capiz</h1>
+    <p>A historical and cultural landmark in the heart of Capiz</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#history">History</a>
+    <a href="#location">Location</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#parking">Parking</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <div class="content">
+      <div>
+        <h2>About Agtalin Shrine</h2>
+        <p>The Agtalin Shrine is a place of religious significance and a symbol of the history and culture of Pilar, Capiz. The shrine is dedicated to the Virgin Mary and serves as a focal point for both locals and visitors, showcasing the rich heritage of the town.</p>
+      </div>
+      <div>
+        <img src="https://via.placeholder.com/600x400" alt="Agtalin Shrine Image" />
+      </div>
+    </div>
+  </section>
+
+  <section id="history">
+    <div class="content">
+      <div>
+        <h2>History of Agtalin Shrine</h2>
+        <p>The Agtalin Shrine was constructed during the early Spanish colonial period as a religious landmark. Over the centuries, it has been a central point for the local community's faith and traditions. The shrine continues to hold significant spiritual value and is a point of pride for the people of Pilar.</p>
+      </div>
+      <div>
+        <img src="https://via.placeholder.com/600x400" alt="Historical Image of Shrine" />
+      </div>
+    </div>
+  </section>
+
+  <section id="location">
+    <div class="content">
+      <div>
+        <h2>Location</h2>
+        <p>The Agtalin Shrine is located in Pilar, Capiz, situated on the island of Panay in the Philippines. It is easily accessible by road from Roxas City and other neighboring towns.</p>
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3921.468922544734!2d122.7658024147976!3d11.443595991919959!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33aef92b64d4d9cb%3A0xf9298994cb20ce29!2sAgtalin%20Shrine!5e0!3m2!1sen!2sph!4v1622511338002!5m2!1sen!2sph" 
+          width="100%" 
+          height="400" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <img src="https://via.placeholder.com/300x200" alt="Gallery Image 1" />
+      <img src="https://via.placeholder.com/300x200" alt="Gallery Image 2" />
+      <img src="https://via.placeholder.com/300x200" alt="Gallery Image 3" />
+      <img src="https://via.placeholder.com/300x200" alt="Gallery Image 4" />
+    </div>
+  </section>
+
+  <section id="parking">
+    <div class="content">
+      <div>
+        <h2>Parking Reservation</h2>
+        <form id="parkingForm">
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="name" required />
+          <label for="plate">Plate Number:</label>
+          <input type="text" id="plate" name="plate" required />
+          <label for="date">Date of Visit:</label>
+          <input type="date" id="date" name="date" required />
+          <button type="submit">Reserve Now</button>
+        </form>
+        <p id="formMessage"></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="content">
+      <div>
+        <h2>Contact Us</h2>
+        <p><strong>Email:</strong> info@agtalinshrine.com</p>
+        <p><strong>Phone:</strong> +63 123 456 7890</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Agtalin Shrine, Pilar, Capiz | All Rights Reserved</p>
+  </footer>
+
+  <!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database.js"></script>
+  <script>
+    const firebaseConfig = {
+      apiKey: "YOUR_API_KEY",
+      authDomain: "YOUR_AUTH_DOMAIN",
+      databaseURL: "YOUR_DATABASE_URL",
+      projectId: "YOUR_PROJECT_ID",
+      storageBucket: "YOUR_STORAGE_BUCKET",
+      messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
+      appId: "YOUR_APP_ID"
+    };
+
+    const app = firebase.initializeApp(firebaseConfig);
+    const db = firebase.database();
+
+    document.getElementById('parkingForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      const name = document.getElementById('name').value;
+      const plate = document.getElementById('plate').value;
+      const date = document.getElementById('date').value;
+
+      db.ref('parkingReservations').push({
+        name: name,
+        plate: plate,
+        date: date
+      });
+
+      document.getElementById('formMessage').innerText = "Reservation submitted successfully!";
+      document.getElementById('parkingForm').reset();
+    });
+  </script>
+</body>
+</html>
